@@ -1,0 +1,117 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego Menocal Landing Page</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+  </head>
+  <body>
+
+<!-- Beginning of The Header, NAVIGATION !-->
+    <header>
+        <div class="nav">
+          <ul>
+            <li class="home"><a class="active" href="#">HOME</a></li>
+            <li class="tutorials"><a href="#">STORE</a></li>
+            <li class="about"><a href="#">ARTWORK</a></li>
+            <li class="news"><a href="#">ABOUT</a></li>
+            <li class="contact"><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
+
+<!-- End of The Header !-->
+
+<!-- Beginning of The First Row, LOGO !-->
+    <section class="row">
+      <div class="logo">
+        <a href="index.html"><img src="images/dmlogo.svg" alt="Diego Menocal Logo" /></a>
+
+      </div>
+    </section>
+<!-- End of The First Row !-->
+
+<!-- Beginning of The Second Row, PROJECT CIRCLES !-->
+    <section class="row">
+      <div class="columns small-12 large-6 projects">
+        <figure>
+          <a href="project1/index.html" target="_blank"><img class="circles" src="images/chaithai.svg" alt="Chai Thai Noodle Logo" /></a>
+            <figcaption>
+              Chai Thai Noodles Website Redesign
+            </figcaption>
+        </figure>
+      </div>
+
+      <div class="columns small-12 large-6 projects">
+        <figure>
+          <a href="quotes/index.html" target="_blank"><img class="circles" src="images/marshawn.svg" alt="Marshawn Lynch Animation" /></a>
+            <figcaption>
+              Marshawn Lynch Animated Quotes
+            </figcaption>
+        </figure>
+      </div>
+
+
+    </section>
+<!-- End of the Second Row !-->
+
+
+<!-- Beginning of the Third Row, SPACER !-->
+    <section class="row">
+      <div class="columns small-12 large-12 spacer"></div>
+    </section>
+<!-- End of Third Row !-->
+
+<!-- Beginning of The Fourth Row, HELLO !-->
+  <section class="row">
+    <div class="columns small-12 large-12 good-day">
+      <h2><span id="greeting">hello!</span></h2>
+
+        <script type="text/javascript">
+
+          var myDate = new Date();
+
+
+          if ( myDate.getHours() < 12 )
+          {
+            document.getElementById('greeting').innerHTML = "Good Morning, is it too early to have a Bloody Mary?";
+          }
+          else
+
+          if ( myDate.getHours() >=12 && myDate.getHours() <=17 )
+          {
+            document.getElementById('greeting').innerHTML = "Good Afternoon, is it Happy Hour?";
+          }
+          else
+
+          if ( myDate.getHours() > 17 && myDate.getHours() <=24 )
+          {
+            document.getElementById('greeting').innerHTML = "Good Evening, Time for a Drink!";
+          }
+          else {
+            document.getElementById('greeting').innerHTML = "What Are You Doing Up?!";
+          }
+
+        </script>
+      <p>I am a front-end developer and graphic artist at Cal State University East Bay. I am a full time student majoring in Graphic Design and Multimedia. This is a landing page for all my projects and artwork.  I will be adding more projects as I complete them.
+      </p>
+      <p>DIEGO MENOCAL</p>
+    </div>
+  </section>
+<!-- End of The Fourth Row !-->
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

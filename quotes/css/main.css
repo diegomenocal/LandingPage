@@ -1,0 +1,214 @@
+/*  BEGIN BACKGROUND STYLING */
+
+body {
+  background-color: #2B5DA5;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  overflow:hidden;
+}
+
+
+
+/*  END BACKGROUND STYLING */
+
+/*  BEGIN HEADER STYLING */
+
+
+h1 {
+  font-family: 'Bangers', cursive;
+  color: #D9E021;
+  text-align: center;
+  font-size: 5em;
+  padding: 50px 20px 50px 20px;
+  background-color: #081A4C;
+  width: 100%;
+  margin: 0;
+}
+
+p {
+  font-family: 'Bangers', cursive;
+  color: #999999;
+  text-align: center;
+}
+
+/*  END HEADER STYLING */
+
+/*  BEGIN SPRITE STYLING */
+
+div {
+
+-webkit-transform: scale(1);
+
+-moz-transform: scale(1);
+
+-o-transform: scale(1);
+
+transform: scale(1);
+
+}
+
+.hi {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/marshawn-sprite.png");
+
+    -webkit-animation: play .8s steps(8) infinite;
+       -moz-animation: play .8s steps(8) infinite;
+        -ms-animation: play .8s steps(8) infinite;
+         -o-animation: play .8s steps(8) infinite;
+            animation: play .8s steps(8) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+/*  END SPRITE STYLING */
+
+/*  BEGIN QUOTE 1 STYLING */
+
+svg{
+  width:100%;
+}
+
+
+.quote1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  font-size: 2em;
+  margin: auto;
+
+
+}
+
+
+
+/*  END QUOTE 1 STYLING */
+
+
+/*  BEGIN QUOTE 2 STYLING */
+
+@keyframes filling {
+  from{
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+
+.quote2 {
+  background-image:  url("../images/skittles.jpg");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color:  #FFFFFF;
+  padding-top: 20px;
+  font-size: 8em;
+  font-family: 'Sigmar One', cursive;
+  animation: filling 3s ease forwards;
+  text-align: center;
+  width: 100%;
+}
+
+/*  END QUOTE 2 STYLING */
+
+
+/*  BEGIN QUOTE 3 STYLING */
+
+
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #D9E021;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #999999;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #081A4C;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+.quote3 {
+  font-family: 'Asap', sans-serif;
+  font-size: 5em;
+}
+
+
+/*  END QUOTE 3 STYLING */
+
+/*  BEGINNING QUOTE 4 STYLING */
+
+.quote4 {
+  fill: url(#gr-radial);
+  font-family: 'Slackey', cursive;
+  font-size: 1em;
+}
+
+
+
+
+/*  END QUOTE 4 STYLING */
