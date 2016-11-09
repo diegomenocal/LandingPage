@@ -16,30 +16,87 @@
   <body>
 
 <!-- Beginning of The Header, NAVIGATION !-->
+<ul class="topnav" id="myTopnav">
+  <li class="leftnav"><a href="#home">DIEGO MENOCAL DESIGNS</a></li>
+  <li><a href="#home">HOME</a></li>
+  <li><a href="#news">STORE</a></li>
+  <li><a href="#contact">ARTWORK</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="#about">CONTACT</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+</ul>
+
+<!--
     <header>
         <div class="nav">
           <ul>
             <li class="home"><a class="active" href="#">HOME</a></li>
-            <li class="tutorials"><a href="#">STORE</a></li>
-            <li class="about"><a href="#">ARTWORK</a></li>
-            <li class="news"><a href="#">ABOUT</a></li>
+            <li class="store"><a href="#">STORE</a></li>
+            <li class="artwork"><a href="#">ARTWORK</a></li>
+            <li class="about"><a href="#">ABOUT</a></li>
             <li class="contact"><a href="#">CONTACT</a></li>
           </ul>
         </div>
       </header>
 
-<!-- End of The Header !-->
+ End of The Header !-->
 
-<!-- Beginning of The First Row, LOGO !-->
+<!-- Beginning of Slider !-->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="images/draymondslide.jpg">
+    <div class="text">Draymond Green "Flex" Low Poly Illustration</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/snowboardslide.jpg">
+    <div class="text">Danny Davis Snowboarding Digital Painting</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/stephslide.jpg">
+    <div class="text">Stephen Curry Water Dispersion Effect</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/moneyballslide.jpg">
+    <div class="text">Moneyball Book Cover and Poster Design</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/dubcityslide.jpg">
+    <div class="text">Oakland "Dub City" Fantasy Landscape</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div class="dots">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<!-- End of Slider !-->
+
+<!-- Beginning of LOGO !-->
     <section class="row">
       <div class="logo">
         <a href="index.html"><img src="images/dmlogo.svg" alt="Diego Menocal Logo" /></a>
 
       </div>
     </section>
-<!-- End of The First Row !-->
+<!-- End of LOGO !-->
 
-<!-- Beginning of The Second Row, PROJECT CIRCLES !-->
+<!-- Beginning of PROJECT CIRCLES !-->
     <section class="row">
       <div class="columns small-12 large-6 projects">
         <figure>
@@ -61,16 +118,16 @@
 
 
     </section>
-<!-- End of the Second Row !-->
+<!-- End of CIRCLES !-->
 
 
-<!-- Beginning of the Third Row, SPACER !-->
+<!-- Beginning of SPACER !-->
     <section class="row">
       <div class="columns small-12 large-12 spacer"></div>
     </section>
-<!-- End of Third Row !-->
+<!-- End of SPACER !-->
 
-<!-- Beginning of The Fourth Row, HELLO !-->
+<!-- Beginning of HELLO !-->
   <section class="row">
     <div class="columns small-12 large-12 good-day">
       <h2><span id="greeting">hello!</span></h2>
@@ -106,12 +163,29 @@
       <p>DIEGO MENOCAL</p>
     </div>
   </section>
-<!-- End of The Fourth Row !-->
+<!-- End of HELLO !-->
 
+<!-- Beginning of Footer !-->
+<footer class="row">
+  <div class="columns large-12 medium-12 small-12">
+
+      <div class="columns large-12 medium-12 small-12 social-icons">
+        <a class="columns large-1 medium-1 small-2" href="https://www.yelp.com/biz/chai-thai-noodles-hayward"><img src="images/Facebook.svg" alt="facebook button" /></a>
+        <a class="columns large-1 medium-1 small-2" href="https://www.instagram.com/chaithainoodles/?ref=badge"><img src="images/Instagram.svg" alt="instagram button" /></a>
+        <a class="columns large-1 medium-1 small-2" href="https://www.pinterest.com/alex_cyan/chai-thai-noodles-conceptual-data/"><img src="images/Linkedin.svg" alt="linkedin button" /></a>
+        <a class="columns large-1 medium-1 small-2" href="https://www.yelp.com/biz/chai-thai-noodles-hayward"><img src="images/Github.svg" alt="Github button" /></a>
+        <a class="columns large-1 medium-1 small-2" href="https://www.instagram.com/chaithainoodles/?ref=badge"><img src="images/Pinterest.svg" alt="Pinterest button" /></a>
+        <a class="columns large-1 medium-1 small-2" href="https://www.pinterest.com/alex_cyan/chai-thai-noodles-conceptual-data/"><img src="images/Behance.svg" alt="Behance button" /></a>
+      </div>
+
+  </div>
+</footer>
+<!-- End of Footer !-->
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
